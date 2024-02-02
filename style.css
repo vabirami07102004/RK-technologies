@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(232, 240, 240);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-top: 5px solid #3bff2d;
+    border-bottom: 5px solid #3bff2d;
+    padding: 80px;
+    margin: 400px;
+    
+}
+h1{
+    color: rgb(24, 247, 21);
+}
+.todo{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.todo__value{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.todo:has(.todo__checkbox:checked){
+    color: #555555;
+    text-decoration: line-through;
+    order: 1;
+}
